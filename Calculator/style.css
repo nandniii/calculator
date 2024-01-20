@@ -1,0 +1,96 @@
+body {
+	background-color: rgb(9 9 11);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-family: 'Montserrat';
+}
+
+section {
+	min-width: 24rem;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem ;
+	border-radius: 0.375rem;
+	background-color: #36495c;
+	gap: 1.25rem;
+}
+
+#result {
+	width: 94%;
+	height: 4rem;
+	background-color: #233240;
+	border-radius: 0.375rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0.75rem;
+	font-size: 2rem;
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.75rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 9999px;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+#clr,
+#del,
+#operator {
+	background-color: #e74c3c;
+	color: #fff;
+}
+
+#clr:hover,
+#del:hover,
+#operator:hover {
+	background-color: #c0392b;
+}
+
+#number {
+	background-color: #34495e;
+	color: #fff;
+}
+
+#number:hover {
+	background-color: #c0392b;
+}
+
+#equal {
+	background-color: #e74c3c;
+	color: #fff;
+}
+
+#equal:hover {
+	background-color: #c0392b;
+}
+
+.calc {
+	width: 100%;
+	flex-grow: 1;
+	height: 26.44rem;
+	border-radius: 0.375rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.75rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+     <link rel="stylesheet" href="./style.css" /> 
+    <meta name="description" content="A simple calculator" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+      * {
+        user-select: none;
+      }
+    </style>
+    <title>Calculator</title>
+  </head>
+  <body class="bg-zinc-950 w-full h-screen flex flex-col gap-y-3 items-center justify-center text-white font-['Montserrat']">
+    
+    <section class=" max-w-96 w-full flex min-h-[34rem] flex-col p-6 rounded-md bg-zinc-900 gap-y-5">
+      <h1 class="text-4xl capitalize font-bold">CALCULATOR</h1>
+      <div id="result" class="w-full h-16 bg-zinc-800 rounded flex justify-end items-center px-3 text-4xl font-medium overflow-hidden"></div>
+      <div class="w-full grow rounded grid grid-cols-4 gap-3 text-xl font-bold">
+        <span id="clr" class="cursor-pointer bg-orange-500 flex items-center justify-center rounded-full active:bg-black md:transition-all">AC</span>
+        <span id="del" class="cursor-pointer bg-orange-500 flex items-center justify-center rounded-full active:bg-black md:transition-all">⌫</span>
+        <span id="operator" class="cursor-pointer bg-orange-500 flex items-center justify-center rounded-full active:bg-black md:transition-all">%</span>
+        <span id="operator" class="cursor-pointer bg-orange-500 flex items-center justify-center rounded-full active:bg-black md:transition-all">÷</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">7</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">8</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">9</span>
+        <span id="operator" class="cursor-pointer bg-orange-500 flex items-center justify-center rounded-full active:bg-black md:transition-all">×</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">4</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">5</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">6</span>
+        <span id="operator" class="cursor-pointer bg-orange-500 flex items-center justify-center rounded-full active:bg-black md:transition-all">-</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">1</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">2</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">3</span>
+        <span id="operator" class="cursor-pointer bg-orange-500 flex items-center justify-center rounded-full active:bg-black md:transition-all">+</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">00</span>
+        <span id="number" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">0</span>
+        <span id="operator" class="cursor-pointer bg-zinc-800 flex items-center justify-center rounded-full md:hover:bg-orange-500 md:transition-all active:bg-black">.</span>
+        <span id="equal" class="cursor-pointer bg-orange-500 flex items-center justify-center rounded-full active:bg-black md:transition-all">=</span>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
